@@ -11,10 +11,10 @@ namespace ConsoleGameRenderer.Component
     {
         public VertexData[] VerticesData { get; } = new VertexData[]
         {
-            new VertexData(new Vector3(-0.5f, 0.5f, 0.0f), new Vector2(0.0f, 1.0f)) with { Color = Color.Blue.ToVector4() },
-            new VertexData(new Vector3(0.5f, 0.5f, 0.0f), new Vector2(1.0f, 1.0f)) with { Color = Color.Red.ToVector4() },
-            new VertexData(new Vector3(0.5f, -0.5f, 0.0f), new Vector2(1.0f, 0.0f)) with { Color = Color.Green.ToVector4() },
-            new VertexData(new Vector3(-0.5f, -0.5f, 0.0f), new Vector2(0.0f, 0.0f)) with { Color = Color.Yellow.ToVector4() },
+            new VertexData(new Vector3(-0.5f, 0.5f, 0.0f),  Color.Blue.ToVector4(),     new Vector3(0.0f, 0.0f, -1.0f), new Vector3(1.0f, 0.0f, 0.0f),   new Vector2(0.0f, 1.0f)),
+            new VertexData(new Vector3(0.5f, 0.5f, 0.0f),   Color.Red.ToVector4(),      new Vector3(0.0f, 0.0f, -1.0f), new Vector3(0.0f, -1.0f, 0.0f),  new Vector2(1.0f, 1.0f)),
+            new VertexData(new Vector3(0.5f, -0.5f, 0.0f),  Color.Green.ToVector4(),    new Vector3(0.0f, 0.0f, -1.0f), new Vector3(-1.0f, 0.0f, 0.0f),  new Vector2(1.0f, 0.0f)),
+            new VertexData(new Vector3(-0.5f, -0.5f, 0.0f), Color.Yellow.ToVector4(),   new Vector3(0.0f, 0.0f, -1.0f), new Vector3(0.0f, 1.0f, 0.0f),   new Vector2(0.0f, 0.0f)),
         };
 
         public int[] Indices { get; } = new int[]
